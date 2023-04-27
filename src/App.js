@@ -4,13 +4,13 @@ import Main from "./components/Main";
 import about from "./components/about";
 import "./components/style.css";
 import { ReactDOM } from "react";
-import { BrowserRouter, Link, Outlet } from "react-router-dom";
+import { HashRouter, Link, Outlet } from "react-router-dom";
 
 function App() {
   return (
     <>
       <div className="wrapper">
-        <BrowserRouter>
+        <HashRouter>
           <switch>
             <router path="/">
               <Main />
@@ -20,7 +20,7 @@ function App() {
               <about />
             </router>
           </switch>
-        </BrowserRouter>
+        </HashRouter>
       </div>
     </>
   );
